@@ -1,36 +1,87 @@
-# My Book
+# My Book – Aplikasi Eksplorasi Buku
 
-## Deskripsi
-My Book adalah aplikasi katalog buku berbasis Flutter yang menampilkan data buku dari **Open Library API**. Pengguna dapat mencari buku, menelusuri berdasarkan kategori, dan melihat detail buku. Dibuat untuk tugas UTS Pemrograman Mobile.
+## 1. Nama Aplikasi
+**My Book**
 
-## Fitur Utama
-- Daftar buku dalam tampilan grid beserta sampul, judul, dan penulis
-- Pencarian buku (judul, penulis, topik)
-- Filter kategori (Fiksi, Fantasi, Sains, Sejarah, Romansa, Teknologi)
-- Pengurutan (rating, terbaru, terlama, edisi terbanyak)
-- Halaman detail: sampul, tahun terbit, jumlah halaman, edisi, subjek, dan deskripsi
-- Penanganan state **loading, success, error** dengan `FutureBuilder` + tombol coba lagi
-- Pull-to-refresh
+## 2. Deskripsi Aplikasi
+My Book adalah aplikasi mobile berbasis Flutter yang digunakan untuk mencari, menjelajahi, dan melihat informasi buku. Aplikasi ini memanfaatkan Open Library API untuk mengambil data buku secara online dan menampilkannya dalam antarmuka yang sederhana dan mudah digunakan.
 
-## Teknologi
-- Flutter & Dart
-- Package `http` (permintaan HTTP)
-- API: `https://openlibrary.org/search.json` dan `https://openlibrary.org/works/{id}.json`
+Aplikasi ini dikembangkan sebagai bagian dari tugas UTS mata kuliah Mobile Programming.
 
-## Struktur Folder
+## 3. Fitur Utama
+- Menampilkan daftar buku dari Open Library API.
+- Menampilkan informasi dan detail buku.
+- Menampilkan sampul buku.
+- Mengelompokkan atau menelusuri buku berdasarkan kategori.
+- Mengambil data buku secara online melalui API.
+- Menampilkan status loading saat data sedang dimuat.
+- Menangani kesalahan ketika data gagal dimuat.
+
+*Catatan: Sesuaikan daftar fitur dengan fitur yang benar-benar tersedia pada aplikasi.*
+
+## 4. Teknologi dan Package yang Digunakan
+- **Flutter** — framework untuk membangun aplikasi mobile.
+- **Dart** — bahasa pemrograman yang digunakan.
+- **Open Library API** — sumber data informasi buku.
+- **http** — package untuk melakukan permintaan HTTP ke API.
+- **Material Design** — komponen antarmuka pengguna Flutter.
+
+## 5. Persyaratan
+Sebelum menjalankan aplikasi, pastikan perangkat telah memiliki:
+- Flutter SDK.
+- Dart SDK (biasanya sudah termasuk dalam Flutter SDK).
+- Android Studio atau Visual Studio Code.
+- Android Emulator atau perangkat Android.
+- Koneksi internet.
+
+## 6. Langkah Menjalankan Aplikasi
+
+### A. Clone Repository
+Jalankan perintah berikut di terminal:
+
+```bash
+git clone https://github.com/jalaluddinmuhammad2108-tech/UTS-Mobile-Programming-BookApp.git
 ```
-lib/
-├── main.dart
-├── models/book.dart
-├── services/book_service.dart
-├── pages/home_page.dart
-├── pages/detail_page.dart
-└── widgets/book_card.dart
+
+### B. Masuk ke Folder Project
+
+```bash
+cd UTS-Mobile-Programming-BookApp
 ```
 
-## Langkah Menjalankan
-1. Pastikan Flutter SDK terpasang (`flutter doctor`).
-2. Clone repositori: `git clone <url-repo>` lalu `cd book_app`
-3. Jika folder platform (android/ios) belum ada: `flutter create .`
-4. Install dependensi: `flutter pub get`
-5. Jalankan: `flutter run`
+### C. Instalasi Dependency
+
+```bash
+flutter pub get
+```
+
+### D. Periksa Konfigurasi Flutter
+
+```bash
+flutter doctor
+```
+
+Pastikan kebutuhan pengembangan Android telah terpenuhi.
+
+### E. Jalankan Aplikasi
+
+Hubungkan perangkat Android atau jalankan emulator, kemudian ketik:
+
+```bash
+flutter run
+```
+
+## 7. Sumber API
+Data buku diperoleh dari Open Library:
+
+https://openlibrary.org/
+
+Dokumentasi API:
+
+https://openlibrary.org/developers/api
+
+## 8. Repository
+GitHub: https://github.com/jalaluddinmuhammad2108-tech/UTS-Mobile-Programming-BookApp
+
+## 9. Tujuan Pengembangan
+Aplikasi ini dibuat untuk menerapkan konsep pengembangan aplikasi mobile menggunakan Flutter, pengambilan data dari API, pengolahan data JSON, serta penyajian informasi buku melalui antarmuka pengguna.
