@@ -1,7 +1,7 @@
-# BukuKu
+# My Book
 
 ## Deskripsi
-BukuKu adalah aplikasi katalog buku berbasis Flutter yang menampilkan data buku dari **Open Library API**. Pengguna dapat mencari buku, menelusuri berdasarkan kategori, dan melihat detail buku. Dibuat untuk tugas UTS Pemrograman Mobile.
+My Book adalah aplikasi katalog buku berbasis Flutter yang menampilkan data buku dari **Open Library API**. Pengguna dapat mencari buku, menelusuri berdasarkan kategori, dan melihat detail buku. Dibuat untuk tugas UTS Pemrograman Mobile.
 
 ## Fitur Utama
 - Daftar buku dalam tampilan grid beserta sampul, judul, dan penulis
