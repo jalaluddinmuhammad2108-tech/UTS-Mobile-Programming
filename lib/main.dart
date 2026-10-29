@@ -9,7 +9,7 @@ class BookApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'BukuKu',
+      title: 'My Book',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
